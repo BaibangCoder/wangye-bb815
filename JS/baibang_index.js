@@ -57,14 +57,14 @@ window.addEventListener('scroll', function () {
 
 
 const tu_images = [
-    { "src": "../img/kapian_1.jpg", "alt": "Image 1" },
-    { "src": "../img/kapian_2.jpg", "alt": "Image 2" },
-    { "src": "../img/kapian_3.jpg", "alt": "Image 1" },
-    { "src": "../img/kapian_4.jpg", "alt": "Image 2" },
-    { "src": "../img/kapian_5.jpg", "alt": "Image 1" },
-    { "src": "../img/kapian_6.jpg", "alt": "Image 2" },
-    { "src": "../img/kapian_7.jpg", "alt": "Image 1" },
-    { "src": "../img/kapian_8.jpg", "alt": "Image 2" }
+    { "src": "./img/kapian_1.jpg", "alt": "Image 1" },
+    { "src": "./img/kapian_2.jpg", "alt": "Image 2" },
+    { "src": "./img/kapian_3.jpg", "alt": "Image 1" },
+    { "src": "./img/kapian_4.jpg", "alt": "Image 2" },
+    { "src": "./img/kapian_5.jpg", "alt": "Image 1" },
+    { "src": "./img/kapian_6.jpg", "alt": "Image 2" },
+    { "src": "./img/kapian_7.jpg", "alt": "Image 1" },
+    { "src": "./img/kapian_8.jpg", "alt": "Image 2" }
 ];
 
 const container = document.getElementById('bb-content');
@@ -98,16 +98,16 @@ for (let i = 0; i < tu_images.length; i += 2) {
 
 
 const navItems = [
-    { "src": "../img/daohang_1.jpg", "alt": "Image 1", "text": "二手房", "link": "#" },
-    { "src": "../img/daohang_2.jpg", "alt": "Image 2", "text": "新房", "link": "#" },
-    { "src": "../img/daohang_3.jpg", "alt": "Image 3", "text": "租房", "link": "#" },
-    { "src": "../img/daohang_4.jpg", "alt": "Image 4", "text": "卖房", "link": "#" },
-    { "src": "../img/daohang_5.jpg", "alt": "Image 5", "text": "查成交", "link": "#" },
-    { "src": "../img/daohang_6.jpg", "alt": "Image 6", "text": "房贷计算", "link": "#" },
-    { "src": "../img/daohang_7.jpg", "alt": "Image 7", "text": "找经济人", "link": "#" },
-    { "src": "../img/daohang_8.jpg", "alt": "Image 8", "text": "商办买卖", "link": "#" },
-    { "src": "../img/daohang_9.jpg", "alt": "Image 9", "text": "购房知识", "link": "../HTML/two.html" },
-    { "src": "../img/daohang_10.jpg", "alt": "Image 10", "text": "商办租凭", "link": "#" }
+    { "src": "./img/daohang_1.jpg", "alt": "Image 1", "text": "二手房", "link": "#" },
+    { "src": "./img/daohang_2.jpg", "alt": "Image 2", "text": "新房", "link": "#" },
+    { "src": "./img/daohang_3.jpg", "alt": "Image 3", "text": "租房", "link": "#" },
+    { "src": "./img/daohang_4.jpg", "alt": "Image 4", "text": "卖房", "link": "#" },
+    { "src": "./img/daohang_5.jpg", "alt": "Image 5", "text": "查成交", "link": "#" },
+    { "src": "./img/daohang_6.jpg", "alt": "Image 6", "text": "房贷计算", "link": "#" },
+    { "src": "./img/daohang_7.jpg", "alt": "Image 7", "text": "找经济人", "link": "#" },
+    { "src": "./img/daohang_8.jpg", "alt": "Image 8", "text": "商办买卖", "link": "#" },
+    { "src": "./img/daohang_9.jpg", "alt": "Image 9", "text": "购房知识", "link": "../HTML/two.html" },
+    { "src": "./img/daohang_10.jpg", "alt": "Image 10", "text": "商办租凭", "link": "#" }
 ];
 
 const container2 = document.getElementById('upper-nav');
