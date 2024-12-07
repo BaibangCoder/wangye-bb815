@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息设置表单</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../iconfont/iconfont.js"></script>
+</head>
+
+<body>
+    <div class="bb-info-box">
+            <span class="iconfont icon-fanhui"></span>
+            <span class="bb-info-text">注册</span>
+        </div>
+    <div class="bb-tonyi">
+        
+
+        <div class="form-container">
+            <form class="my-form">
+                <h2>账号密码登录</h2>
+                <h2>22001010815 白帮</h2>
+                <!-- 手机号输入框 -->
+                <div class="form-group">
+                    <div class="country-code">
+                        <select id="country-code" name="country-code">
+                            <option value="+86">+86</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <option value="+91">+91</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="请输入手机号" required>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- 密码输入框 -->
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="请输入密码" required>
+                </div>
+
+                <hr class="divider">
+
+                <div class="agreement-container">
+                    <label class="agreement-label">
+                        <input type="checkbox" class="agreement-checkbox" id="agreement-checkbox">
+                        <span class="custom-checkbox"></span>
+                        打勾表示您已阅读并同意以下协议
+                        <a href="#" class="agreement-link">《贝壳用户服务协议》</a>以及
+                        <a href="#" class="agreement-link">《贝壳隐私政策》</a>
+                    </label>
+                </div>
+
+                <br>
+
+
+
+                <!-- 提交按钮 -->
+                <div class="form-group">
+
+                    <button type="submit" class="submit-btn" id="login-btn" disabled>立即登录</button>
+
+
+                </div>
+
+            </form>
+            <div class="quick-login-box">
+                <a href="#" class="quick-link">手机快捷登录</a>
+                <span>|</span>
+                <a href="#" class="quick-link">忘记密码</a>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- 其他方式登录 -->
+
+    <div class="other-login">
+        <p class="other-login-text">其他方式登录</p>
+        <div class="social-icons">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weixin1"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-qq"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weibo"></use>
+            </svg>
+
+        </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>

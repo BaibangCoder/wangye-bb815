@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../CSS/baibang_index.css">
+    <script src="../iconfont/iconfont.js"></script>
+    <title>首页</title>
+    
+</head>
+<body>
+
+    <div class="bb-container">
+        <!-- 顶部 -->
+        <div id="bb-top">
+            <div class="left-section">
+                <span class="iconfont icon-dingwei"></span>
+                <span>大连</span>
+            </div>
+            <div class="center-section">
+                <span>看点&nbsp&nbsp </span>
+                <span>首页</span>
+            </div>
+            <div class="right-section">
+                <!-- <span class="iconfont icon-beikezhaofang"></span> -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gaodeditu"></use>
+                  </svg>
+                <span>地图</span>
+            </div>
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <span class="iconfont icon-arrow-right-copy-copy-copy"></span>
+                22001010815 白帮
+            </div>
+        </div>
+
+        <!-- 顶部导航 -->
+        <div id="bb-daohang">
+            <!-- 上导航 -->
+            <div id="upper-nav">
+                <!-- <div class="small-box">
+                    <img src="../img/daohang_1.jpg" alt="Image 1">
+                    <p>二手房</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_2.jpg" alt="Image 2">
+                    <p>新房</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_3.jpg" alt="Image 3">
+                    <p>租房</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_4.jpg" alt="Image 4">
+                    <p>卖房</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_5.jpg" alt="Image 5">
+                    <p>查成交</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_6.jpg" alt="Image 6">
+                    <p>房贷计算</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_7.jpg" alt="Image 7">
+                    <p>找经济人</p>
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_8.jpg" alt="Image 8">
+                    <p>商办买卖</p>
+                </div>
+                <div class="small-box">
+                    <a href="../HTML/two.html">
+                        <img src="../img/daohang_9.jpg" alt="Image 9">
+                        <p>购房知识</p>
+                    </a>
+                    
+                </div>
+                <div class="small-box">
+                    <img src="../img/daohang_10.jpg" alt="Image 10">
+                    <p>商办租凭</p>
+                </div> -->
+            </div>
+
+            <!-- 轮询图 -->
+            <div id="polling">
+                <div class="polling-box">
+                    <div class="carousel">
+                        <img class="carousel-image" src="../img/lunbo_1.jpg" alt="Image 1">
+                        <img class="carousel-image" src="../img/lunbo_2.jpg" alt="Image 2">
+                    </div>
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+                <!-- <div class="polling-box">
+                    <img src="../img/2.jpg" alt="Image 1">
+                </div> -->
+                <div class="polling-box">
+                    <img src="../img/lunbo_3.jpg" alt="Image 2">
+                </div>
+                <div class="polling-box">
+                    <img src="../img/lunbo_4.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 滑动固定目录 -->
+        <div id="bb-catalog">
+            <span>&nbsp&nbsp&nbsp推荐</span>
+            <span>二手房子</span>
+            <span>新房</span>
+            <span>租房</span>
+        </div>
+
+
+        <!-- 内容 -->
+        <div id="bb-content">
+            <!-- 这里使用JSON生成 -->
+        </div>
+        
+
+
+        <!-- 下导航 -->
+        <ul id="fixed">
+            <li class="active">
+                <span class="icon" aria-hidden="true">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shouye"></use>
+                    </svg>
+                </span>
+                <p>首页</p>
+            </li>
+            <li>
+                <span class="icon" aria-hidden="true">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jiamenkou"></use>
+                    </svg>
+                </span>
+                <a href="../HTML/house.html">
+                <p>我家</p></a>
+            </li>
+            <li>
+                <span class="icon" aria-hidden="true">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiaoxi"></use>
+                    </svg>
+                </span>
+                <a href="../HTML/message.html">
+                <p>消息</p></a>
+            </li>
+            <li>
+                <span class="icon" aria-hidden="true">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wode1"></use>
+                    </svg>
+                </span>
+                <a href="../HTML/my.html">
+                <p>我的</p></a>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="../JS/baibang_index.js"></script>
+</body>
+</html>

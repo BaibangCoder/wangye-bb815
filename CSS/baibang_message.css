@@ -1,0 +1,123 @@
+body, ul, p {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+#fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    background-color: #fff;
+}
+#fixed li {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.3s;
+    position: relative;
+}
+#fixed li span.icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#fixed li p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#fixed li.active {
+    background: #007bff;
+    border-radius: 20px;
+    padding: 3px 4px  7px 4px;
+    /* width: auto; */
+    /* width: fit-content; */
+    /* width: 70px; */
+    /* height: 20px; */
+    margin: 7px 6px  3px 6px;
+
+    position: relative;
+
+}
+#fixed li.active span.icon {
+    display: inline-block;
+}
+#fixed li.active p {
+    color: #fff;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    /* margin: 0 auto; */
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+#bb-top {
+    width: 100%;
+    height: 60px;
+    background-color: #e1e3e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 确保顶部盒子在最上面 */
+
+    display: flex;
+    justify-content: space-between; /* 两端对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    flex-wrap: wrap; /* 使元素换行 */
+}
+
+.bb-message-box {
+    margin-left: 20px; /* 向右移动 20px */
+}
+
+.bb-icon-box {
+    margin-right: 20px; /* 向左移动 20px */
+}
+
+.bb-message-box span {
+    font-size: 24px; /* 设置文本放大 */
+
+}
+
+.bb-icon-box span {
+    font-size: 30px; /* 设置图标放大 */
+}
+
+#bb-content {
+    height: 2500px;
+    background-color: #ffffff;
+    padding-top: 100px; /* 给内容区留出目录高度的空间 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

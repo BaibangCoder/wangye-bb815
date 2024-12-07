@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../iconfont/iconfont.js"></script>
+    <title>我家</title>
+    <style>
+        body, ul, p {
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        #fixed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            background-color: #fff;
+        }
+        #fixed li {
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: all 0.3s;
+            position: relative;
+        }
+        #fixed li span.icon {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            line-height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        #fixed li p {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #fixed li.active {
+            background: #007bff;
+            border-radius: 20px;
+            padding: 3px 4px  7px 4px;
+            /* width: auto; */
+            /* width: fit-content; */
+            /* width: 70px; */
+            /* height: 20px; */
+            margin: 7px 6px  3px 6px;
+
+            position: relative;
+
+        }
+        #fixed li.active span.icon {
+            display: inline-block;
+        }
+        #fixed li.active p {
+            color: #fff;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            /* margin: 0 auto; */
+            vertical-align: 0em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fixed">
+        <li >
+            <span class="icon" aria-hidden="true">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shouye"></use>
+                </svg>
+            </span>
+            <a href="../HTML/index.html">
+            <p>首页</p></a>
+        </li>
+        <li class="active">
+            <span class="icon" aria-hidden="true">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiamenkou"></use>
+                </svg>
+            </span>
+            <a href="../HTML/house.html">
+            <p>我家</p></a>
+        </li>
+        <li >
+            <span class="icon" aria-hidden="true">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiaoxi"></use>
+                </svg>
+            </span>
+            <a href="../HTML/message.html">
+            <p>消息</p></a>
+        </li>
+        <li >
+            <span class="icon" aria-hidden="true">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wode1"></use>
+                </svg>
+            </span>
+            <a href="../HTML/my.html">
+            <p>我的</p></a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,172 @@
+body, ul, p,div {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none; /* 去除下划线 */
+}
+.bb-info-box {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色可以自定义 */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px 20px; /* 内边距 */
+    z-index: 9999; /* 确保浮动在顶部 */
+    box-sizing: border-box;
+}
+
+.bb-iconfont.bb-icon-west {
+    font-size: 20px; /* 图标大小 */
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+
+.bb-info-text {
+    flex-grow: 1; /* 使文字占满剩余空间 */
+    text-align: center; /* 文字居中 */
+    font-weight: bold;
+    color: #333; /* 文字颜色 */
+}
+
+.bb-tonyi{
+    width: 100%;
+    /* height: 100vh; */
+    /* margin: 70px auto; */
+    box-sizing: border-box;
+}
+
+.search-box {
+    background-color: rgb(223, 221, 221);
+    align-items: center;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto 5px;
+    border-radius: 50px;
+    padding: 8px 20px;
+}
+
+.bb-zishi {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.bb-xinfan img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 15%;
+}
+
+.bb-jiacu {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.bb-shunxu {
+    /* width: 100%; */
+    margin-left: 20px;
+    color: rgb(184, 181, 181);
+}
+
+
+
+/* .bb-container {
+    display: flex;
+    height: 100vh;
+}
+
+.bb-sidebar {
+    width: 40%;
+    background-color: #f5f5f5;
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+} */
+
+.bb-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bb-sidebar li {
+    height: 60px; /* 导航项高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid #ddd; /* 分隔线 */
+}
+
+.bb-sidebar a {
+    text-decoration: none;
+    color: #888; /* 默认灰色 */
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px; /* 垂直居中 */
+    text-align: center; /* 水平居中 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+.bb-sidebar a:hover {
+    background-color: #e6e6e6; /* 鼠标悬浮效果 */
+}
+
+.bb-sidebar a.active {
+    color: #007bff; /* 当前页面文字颜色为蓝色 */
+    background-color: #fff; /* 当前页面背景为白色 */
+    border-bottom: 3px solid #007bff; /* 当前页面底部高亮 */
+}
+
+.bb-sidebar a.inactive {
+    color: #aaa; /* 非当前页面文字颜色为灰色 */
+}
+
+/* .bb-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+} */
+
+.bb-page {
+    display: none; /* 默认隐藏所有页面 */
+}
+
+.bb-page.active {
+    display: block; /* 仅激活的页面显示 */
+}
+
+.bb-container img {
+    width: 100%;
+}
+
+
+.bb-container {
+    display: flex;
+    height: calc(100vh - 70px); /* 使容器的高度为视口高度减去固定的70px顶部元素 */
+    overflow: hidden; /* 确保父容器本身不滚动 */
+}
+
+.bb-sidebar {
+    width: 40%;
+    height: 100%; /* 占据容器的100%高度 */
+    background-color: #f5f5f5;
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 允许侧边栏滚动 */
+}
+
+.bb-content {
+    width: 60%; /* 右侧内容区域宽度 */
+    height: 100%; /* 内容区占据剩余高度 */
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto; /* 内容区允许滚动 */
+}

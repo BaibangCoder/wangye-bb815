@@ -1,0 +1,98 @@
+.bb-info-box {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色可以自定义 */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px 20px; /* 内边距 */
+    z-index: 9999; /* 确保浮动在顶部 */
+    box-sizing: border-box; /* 确保 padding 不影响总宽度 */
+}
+a {
+    text-decoration: none; /* 去除下划线 */
+}
+.bb-box1, .bb-box3 {
+    flex: 0 1 auto; /* 不扩展，但可以收缩 */
+    width: auto; /* 让它们根据内容自适应宽度 */
+}
+
+.bb-box2 {
+    flex-grow: 1; /* 文字居中，占据剩余空间 */
+    text-align: center; /* 文字居中 */
+}
+
+.bb-info-text {
+    font-weight: bold;
+    color: #333; /* 文字颜色 */
+}
+
+.bb-iconfont {
+    font-size: 20px; /* 图标大小 */
+}
+
+.bb-box1 .iconfont, .bb-box3 .iconfont {
+    font-size: 24px; /* 增大图标的大小 */
+}
+
+
+.bb-text{
+    margin: 50px 10px 0;
+}
+.bb-text img{
+    width: 100%;
+
+}
+.biaoti{
+    margin-bottom: 5px;
+}
+.original {
+    font-size: 12px;
+    background-color: #e0f7fa; /* 浅蓝色背景 */
+    color: #007bb5; /* 深蓝色文字 */
+    padding: 2px 6px; /* 内边距，增加可读性 */
+    border-radius: 4px; /* 圆角效果 */
+}
+
+.date {
+    font-size: 12px;
+    color: #808080; /* 灰色文字 */
+}
+
+.xiahuaxian {
+    border: 1px solid #f4f3f3;
+    margin: 10px 0 10px 0;
+}
+
+
+.wz{
+    font-size: 12px;
+    background-color: #e0ebfa; /* 浅蓝色背景 */
+    color: #143f55; /* 深蓝色文字 */
+    padding: 2px 6px; /* 内边距，增加可读性 */
+    border-radius: 4px; /* 圆角效果 */
+}
+
+p {
+    line-height: 1.5; /* 设置行间距为 1.8 倍字体大小 */
+}
+
+
+
+
+.bb-jiewei {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 200px; /* 设置盒子的高度 */
+
+}
+
+.jiewei-text {
+    background-color: #808080; /* 胶囊状背景的灰色 */
+    color: white; /* 文字颜色 */
+    padding: 10px 20px; /* 增加内边距，使背景变得宽大 */
+    border-radius: 20px; /* 设置圆角，形成胶囊状 */
+    font-size: 12px; /* 字体大小 */
+}

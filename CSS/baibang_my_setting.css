@@ -1,0 +1,99 @@
+.bb-info-box {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色可以自定义 */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px 20px; /* 内边距 */
+    z-index: 9999; /* 确保浮动在顶部 */
+}
+a {
+    text-decoration: none; /* 去除下划线 */
+}
+
+.bb-iconfont.bb-icon-west {
+    font-size: 20px; /* 图标大小 */
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+
+.bb-info-text {
+    flex-grow: 1; /* 使文字占满剩余空间 */
+    text-align: center; /* 文字居中 */
+    font-weight: bold;
+    color: #333; /* 文字颜色 */
+}
+
+
+.bb-profile-box {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    height: 60px; /* 每个盒子高度为60px */
+    background-color: #fff;
+    /* justify-content: space-between;  */
+}
+
+.bb-profile-box > span:first-child {
+    font-size: 14px; /* 放大字体 */
+    font-weight: bold; /* 加粗 */
+    color: #333; /* 文字颜色加黑 */
+    text-align: left; /* 靠左对齐 */
+    margin-left: 10px; /* 左边距 */
+    flex-shrink: 0; /* 保持原大小 */
+    flex-grow: 1;
+}
+
+.bb-info-left {
+    display: flex; /* 使用flex布局排列头像和文字 */
+    align-items: center; /* 头像和文字垂直居中 */
+}
+
+.bb-info-left img {
+    width: 40px; /* 控制头像大小 */
+    height: 40px;
+    border-radius: 50%; /* 头像圆形 */
+    margin-right: 10px; /* 头像与文字之间的间距 */
+}
+
+.bb-info-left span {
+    text-align: right;
+    color: #999; /* 文字颜色为灰色 */
+}
+
+.bb-profile-box .iconfont {
+    width: 20px; /* 控制图标大小 */;
+    margin-left: auto; /* 图标靠右 */
+    color: #999; /* 图标颜色为灰色 */
+}
+
+.bb-tonyi hr {
+    margin: 0; /* 去掉水平线的间距 */
+    border: 0;
+    border-top: 1px solid #e3e1e1; /* 设置水平线样式 */
+}
+
+.bb-tonyi {
+    height: 1000px;
+    background-color: #f0eeee;
+}
+
+
+
+
+
+.bb-logout-box {
+    height: 70px; /* 设置高度为70px */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中齐 */
+    background-color: #ffffff; /* 背景色可选，可以自定义 */
+}
+
+.bb-logout-box span {
+    color: rgb(25, 151, 230); /* 设置文字颜色为蓝色 */
+    font-size: 16px; /* 文字大小可以自定义 */
+    /* font-weight: bold;  */
+}
+
+

@@ -1,0 +1,358 @@
+body, ul, p,div {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none; /* 去除下划线 */
+    color: #000000;
+}
+ul {
+    list-style: none;
+}
+#fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    background-color: #fff;
+}
+#fixed li {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.3s;
+    position: relative;
+}
+#fixed li span.icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#fixed li p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#fixed li.active {
+    background: #007bff;
+    border-radius: 20px;
+    padding: 3px 4px  7px 4px;
+    /* width: auto; */
+    /* width: fit-content; */
+    /* width: 70px; */
+    /* height: 20px; */
+    margin: 7px 6px  3px 6px;
+
+    position: relative;
+
+}
+#fixed li.active span.icon {
+    display: inline-block;
+}
+#fixed li.active p {
+    color: #fff;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    /* margin: 0 auto; */
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#bb-top {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 确保顶部盒子在最上面 */
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* 垂直居中对齐 */
+    flex-wrap: wrap; /* 使元素换行 */
+}
+
+.left-section, .center-section, .right-section {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px;
+}
+
+.center-section {
+    display: flex;
+    justify-content: center; /* 水平居中对齐 */
+    flex-grow: 1; /* 使 center-section 占据剩余空间 */
+}
+
+.center-section span:first-child {
+    color: gray; /* 看点为灰色 */
+}
+
+.center-section span:last-child {
+    font-size: 20px; /* 首页文字变大 */
+    font-weight: bold; /* 首页文字加粗 */
+    color: black; /* 首页文字黑色 */
+}
+
+
+
+
+
+
+.right-section {
+    justify-content: flex-end; /* 右对齐 */
+}
+
+.search-box {
+    margin: 5px 5px 5px 5px;
+    background-color: rgb(223, 221, 221);
+    border-radius: 50px; /* 胶囊形状 */
+    padding: 8px 20px;
+    /* display: flex; */
+    align-items: center;
+    margin-top: 10px; /* 添加上边距，将搜索框推到下一行 */
+    cursor: pointer;
+    width: 100%; /* 使搜索框宽度占满整行 */
+    max-width: 330px; /* 设置最大宽度，避免搜索框过宽 */
+    margin-left: auto; /* 让搜索框居中 */
+    margin-right: auto; /* 让搜索框居中 */
+}
+
+.search-box span {
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+
+
+
+#bb-catalog {
+    width: 100%;
+    /* height: 30px; */
+    position: sticky;
+    background-color: #fff;
+    top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#bb-catalog span {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#bb-catalog span:first-child {
+    font-weight: bold;
+    color: black; /* 推荐加粗并设置为黑色 */
+}
+
+#bb-catalog span:nth-child(2),
+#bb-catalog span:nth-child(3),
+#bb-catalog span:nth-child(4) {
+    color: #888; /* 其他文字为灰色 */
+}
+
+#bb-catalog span:not(:last-child) {
+    margin-right: 10px; /* 设置词语之间的间距 */
+}
+
+
+
+
+
+
+#bb-content {
+    /* height: 2500px; */
+
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; /* 保持盒子之间的均匀间距 */
+    z-index: -100;
+}
+
+.box {
+    width: 45%; /* 每个小盒子占据父容器的 45% 宽度 */
+    height: 0;
+    padding-bottom: 80%; /* 保持1:2的宽高比 */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    margin-bottom: 5px; /* 缩小上下盒子之间的间距 */
+}
+
+.box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+
+#bb-daohang {
+    width: 100%;
+    /* height: 350px; */
+
+    margin-top: 90px; /* 给顶部盒子留出空间 */
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-nav {
+    color: #000000;
+    height: 150px;
+    flex: 1; /* 占据父容器的一半高度 */
+    display: flex;
+    flex-wrap: wrap; /* 让小盒子换行 */
+    justify-content: space-between; /* 水平均匀分布 */
+    padding: 10px;
+}
+
+.small-box {
+    color: #000000;
+    /* height: 70px; */
+    width: 18%; /* 每个小盒子的宽度 */
+    margin-bottom: 10px; /* 设置底部间距 */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.small-box img {
+    width: 80%; /* 图片宽度占满小盒子 */
+    /* height: 50px; */
+    border-radius: 5px;
+}
+
+#polling {
+    display: flex;
+    justify-content: space-between; /* 让小盒子水平均匀分布 */
+    padding: 10px;
+
+    flex: 1;
+}
+
+.polling-box {
+    position: relative;
+    width: 30%; /* 每个小盒子占 30% 宽度 */
+    text-align: center; /* 让图片居中显示 */
+    overflow: hidden;
+}
+
+.polling-box img {
+    width: 100%; /* 图片宽度占满小盒子的宽度 */
+    height: auto; /* 保持图片的比例 */
+    border-radius: 5px; /* 可选：让图片有圆角 */
+}
+
+/* .polling-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+} */
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 实现平滑过渡 */
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0; /* 防止图片缩小 */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0); /* 按钮背景 */
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.0); /* 悬停时按钮的颜色变化 */
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

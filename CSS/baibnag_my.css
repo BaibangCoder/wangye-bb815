@@ -1,0 +1,272 @@
+body, ul, p {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none; /* 去除下划线 */
+    color: #333;
+}
+#fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    background-color: #fff;
+}
+#fixed li {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.3s;
+    position: relative;
+}
+#fixed li span.icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#fixed li p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#fixed li.active {
+    background: #007bff;
+    border-radius: 20px;
+    padding: 3px 4px  7px 4px;
+    /* width: auto; */
+    /* width: fit-content; */
+    /* width: 70px; */
+    /* height: 20px; */
+    margin: 7px 6px  3px 6px;
+
+    position: relative;
+
+}
+#fixed li.active span.icon {
+    display: inline-block;
+}
+#fixed li.active p {
+    color: #fff;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    /* margin: 0 auto; */
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/*                                         顶部固定的盒子                   */
+.bb-header {
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 图片和图标之间有间隔 */
+    align-items: center; /* 垂直居中对齐 */
+    position: fixed; /* 固定在顶部 */
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左侧对齐 */
+    right: 0; /* 右侧对齐 */
+    height: 60px; /* 固定盒子的高度 */
+    background-color: #fff; /* 背景色 */
+    padding: 0 20px; /* 内边距，可以根据需要调整 */
+    z-index: 1000; /* 确保盒子在最上层 */
+}
+
+.bb-header img {
+     /* 设置图片宽度 */
+    height: 40px; /* 设置图片高度 */
+}
+
+.bb-icons {
+    display: flex; /* 使用flex布局将图标排列 */
+    justify-content: flex-end; /* 图标靠右对齐 */
+    gap: 20px; /* 图标之间的间距 */
+}
+
+.bb-icons span {
+    font-size: 24px; /* 设置图标的大小 */
+}
+
+#bb-content {
+    background-color: #ffffff;
+    padding-top: 60px; /* 给内容区留出目录高度的空间 */
+}
+
+
+
+.bb-box {
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 图片靠右，手机号和椭圆框靠左 */
+    align-items: flex-start; /* 内容顶部对齐 */
+    /* height: 100px; */
+    background-color: #ffffff; /* 背景颜色 */
+    padding: 10px;
+}
+
+.bb-phone {
+    display: flex;
+    flex-direction: column; /* 垂直排列手机号和椭圆框 */
+    justify-content: flex-start; /* 顶部对齐 */
+    flex-grow: 1; /* 占据剩余空间 */
+}
+
+.bb-phone span {
+
+    font-size: 20px; /* 设置手机号字体大小 */
+    font-weight: bold; /* 可选：加粗手机号文字 */
+}
+
+.bb-image {
+    display: flex;
+    align-items: center; /* 垂直居中头像 */
+}
+
+.bb-image img {
+    width: 70px; /* 设置头像宽度 */
+    height: 70px; /* 设置头像高度 */
+    border-radius: 50%; /* 使头像成为圆形 */
+}
+
+.bb-ellipse-container {
+    display: flex;
+    gap: 10px; /* 设置两个椭圆框之间的间距 */
+    margin-top: 10px; /* 给椭圆框添加顶部间距 */
+}
+
+.bb-ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* 设置椭圆框宽度 */
+    height: 30px; /* 设置椭圆框高度 */
+    background-color: #ddd; /* 背景颜色 */
+    border-radius: 30px; /* 使其成为椭圆形 */
+    color: #333; /* 文字颜色 */
+    font-size: 14px; /* 文字大小 */
+}
+
+
+.bb-box2{
+    margin: 10px; /* 外边距 */
+    border-radius: 10px; /* 圆角 */
+    background-color: #f5f5fc; /* 可选：设置背景颜色 */
+    padding: 10px; /* 可选：内部填充 */
+    /* border: 1px solid #ddd;  */
+}
+
+
+.bb-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.bb-text {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: space-between; /* 左右分布 */
+    color: #007bff;
+    align-items: center;
+    font-weight: bold;
+}
+
+.bb-right-text {
+    margin-left: auto; /* 将“去评价”推到右边 */
+    font-size: 14px; /* 可选：调整字体大小 */
+}
+
+.bb-hr{
+
+    border-top: 1px solid #e3e1e1; /* 设置水平线样式 */
+}
+
+
+.bb-biao {
+    width: 100%;
+    display: flex; /* 使用 flex 布局 */
+    justify-content: space-around; /* 让小盒子水平排列并均匀分布 */
+    align-items: center; /* 小盒子整体上下居中 */
+
+    background-color: #f9f9f9; /* 可选：背景颜色 */
+}
+
+.bb-box3 {
+    display: flex;
+    flex-direction: column; /* 垂直排列图片和文字 */
+    align-items: center; /* 图片和文字居中对齐 */
+    text-align: center; /* 文字居中 */
+}
+
+.bb-box3 img {
+    width: 60%; /* 图片宽度 */
+    object-fit: cover; /* 确保图片按比例填充 */
+    border-radius: 10px; /* 可选：图片圆角效果 */
+    margin-bottom: 5px; /* 图片和文字之间的间距 */
+}
+
+.bb-box3 span {
+    font-size: 14px; /* 文字大小 */
+    color: #333; /* 文字颜色 */
+    line-height: 1; /* 调整文字的行高 */
+    display: flex; /* 使用 flex 布局方便居中 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 20px; /* 设置文字区域的高度 */
+}
+
+
+
+
+.bb-tuijian{
+    width: 100%;
+    text-align: center;
+}
+
+
+#bb-tiancong {
+    /* height: 2500px; */
+
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; /* 保持盒子之间的均匀间距 */
+    z-index: -100;
+}
+
+.box4 {
+    width: 45%; /* 每个小盒子占据父容器的 45% 宽度 */
+    height: 0;
+    padding-bottom: 80%; /* 保持1:2的宽高比 */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    margin-bottom: 5px; /* 缩小上下盒子之间的间距 */
+}
+
+.box4 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
