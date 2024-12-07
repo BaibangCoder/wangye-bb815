@@ -46,7 +46,7 @@ document.querySelector('.my-form').addEventListener('submit', function(event) {
 
 
     // 在按钮点击时跳转到 index.html
-    window.location.href = '../HTML/index.html';  // 跳转到同目录下的 index.html
+    window.location.href = '../index.html';  // 跳转到同目录下的 index.html
 });
 
 
