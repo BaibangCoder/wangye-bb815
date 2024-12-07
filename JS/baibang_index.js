@@ -106,7 +106,7 @@ const navItems = [
     { "src": "./img/daohang_6.jpg", "alt": "Image 6", "text": "房贷计算", "link": "#" },
     { "src": "./img/daohang_7.jpg", "alt": "Image 7", "text": "找经济人", "link": "#" },
     { "src": "./img/daohang_8.jpg", "alt": "Image 8", "text": "商办买卖", "link": "#" },
-    { "src": "./img/daohang_9.jpg", "alt": "Image 9", "text": "购房知识", "link": "../HTML/two.html" },
+    { "src": "./img/daohang_9.jpg", "alt": "Image 9", "text": "购房知识", "link": "./HTML/two.html" },
     { "src": "./img/daohang_10.jpg", "alt": "Image 10", "text": "商办租凭", "link": "#" }
 ];
 
